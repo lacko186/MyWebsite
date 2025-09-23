@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+    background-color: #111111;
+}
+
+.cim h1{
+    color: #c9c9cc;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0 auto
+}
+
+.square {
+  background-color: #1d1d1d;
+  box-shadow: 0 0 2px #000;
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+  transition: 2s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+@media(max-width: 768){
+* {
+    box-sizing: border-box;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;  font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+  background-color: #111;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.square {
+  background-color: #1d1d1d;
+  box-shadow: 0 0 2px #000;
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+  transition: 2s ease; 
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
+
+}
+#bemutatkozas{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #000;
+    transition: 2s ease;
+    color: #e1e3bd;
+    border: 2px solid #111;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    cursor: pointer;
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px
+}
+.card{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #000;
+    transition: 2s ease;
+    color: #ffffff;
+    border: 2px solid #111;
+    box-shadow: 5px 5px 5px #000;
+    cursor: pointer;
+    font-family: 'arial', sans-serif;
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+.card a {
+    color: #676767
+}
+.kartyak{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#tapasztalat{
+    color: #fff;
+    font-family: 'white rabbit', cursive;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #000;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #111;
+    border-radius: 10px;
+    font-variant: small-caps;
+    box-shadow: 5px 5px 5px #000;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    cursor: pointer;
+
+}
+
+.team .member {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.89);
+    padding: 30px;
+    border-radius: 5px;
+    background: #181818;
+    transition: 0.5s;
+    height: 100%;
+    color: #fff
+}
+
+.team .member .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .member:hover {
+  transform: translateY(-10px);
+}
+
+.team .member .member-info {
+  padding-left: 30px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #313131;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.team .member  {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member  a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  background: #223459;
+}
+
+.team .member  a i {
+  color: rgb(176, 176, 176);
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .member  a:hover {
+  background: rgb(212, 212, 212);
+}
+
+.team .member  a:hover i {
+  color: #fff;
+}
+
+.team .member a+a {
+  margin-left: 8px;
+}
+#footer{
+    background: linear-gradient(to right, #1e1d1d, #000000);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
