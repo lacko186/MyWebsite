@@ -5,4 +5,4 @@ I'm Lászlo Bogdán, this is a presentation page, i'd like to showcase my skills
 
 <img src="site.png" alt="website">
 
-<center>![Demo](20250924_012513.gif)</center>
+![Demo](20250924_012513.gif)
