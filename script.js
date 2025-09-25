@@ -111,7 +111,7 @@ function generateSkillCards() {
             'id': 2,
             'name': 'PHP',
             'description': 'Szerveroldali programozás és adatbázis kezelés',
-            'github': 'https://github.com/lacko186/KaposTransit_vizsgaremek',
+            'github': 'https://github.com/lacko186/KaposTransit-vizsgaremek',
             'value': '60%',
             'progresstyle': 'background-color: #2d0454;',
             'project': 'https://github.com/Noszlopy-13D/FalkaMarietta_BogdanLaszlo/raw/main/dokumentacio/valosideju.png'
@@ -120,7 +120,7 @@ function generateSkillCards() {
             'id': 3,
             'name': 'NodeJS',
             'description': 'Valós idejű alkalmazások és API fejlesztés',
-            'github': 'https://github.com/lacko186/websocket_gyakorlas',
+            'github': 'https://github.com/lacko186/websocket',
             'value': '80%',
             'progresstyle': 'background-color: #084e04ff;',
             'project': 'https://github.com/lacko186/websocket/blob/main/chat.PNG?raw=true'
@@ -129,7 +129,7 @@ function generateSkillCards() {
             'id': 4,
             'name': 'C#',
             'description': 'Asztali alkalmazások és .NET fejlesztés',
-            'github': 'https://github.com/lacko186/asztali_gyakorlo',
+            'github': 'https://github.com/lacko186/asztali-gyakorlo',
             'value': '70%',
             'progresstyle': 'background-color: #9a0c85ff;',
             'project': 'konvertalo.png'
