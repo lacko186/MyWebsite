@@ -1,25 +1,58 @@
-* {
-    box-sizing: border-box;
+*{
     font-family: "Balsamiq Sans", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-optical-sizing: auto;
+    scroll-behavior: smooth;
 }
 
-body {
-    background-color: #111111;
-    margin: 0;
-    padding: 0;
+body{
+    background-color: #121212;
 }
 
-.cim h1 {
-    color: #c9c9cc;
+.cim{
+    color: #fff;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: clamp(28px, 8vw, 50px);
+}
+
+#bemutatkozas {
+    margin-top: 30px;
+    text-align: center;
+    font-size: clamp(16px, 4vw, 20px);
     font-weight: bold;
-    text-shadow: 2px 2px 4px #000;
-    padding: 0 10px;
+    text-shadow: 5px 5px 5px #000;
+    transition: 2s ease;
+    color: #e1e3bd;
+    border: 2px solid #111;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #000;
+    cursor: pointer;
+    width: min(400px, 90vw);
+    margin: 30px auto;
+    padding: 20px;
+}
+#nevjegy{
+    background-color: #222222;
+    color: #fff;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#cardtext{
+    margin-left: 5%;
+}
+
+#menu{
+    background-color: #1b1b1b;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#menu a{
+    color: #fff;
+    font-size: 30px;
+}
+#menu a:hover{
+    color: #1b9690;
+    text-decoration: none;
 }
 
 .container {
@@ -45,298 +78,150 @@ body {
     transition-duration: 0s;
 }
 
-#bemutatkozas {
-    margin-top: 30px;
-    text-align: center;
-    font-size: clamp(16px, 4vw, 20px);
-    font-weight: bold;
-    text-shadow: 5px 5px 5px #000;
-    transition: 2s ease;
-    color: #e1e3bd;
-    border: 2px solid #111;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px #000;
-    cursor: pointer;
-    width: min(400px, 90vw);
-    margin: 30px auto;
-    padding: 20px;
+#normalcsomag{
+    background: linear-gradient(135deg, #1b75ad, #1d1d1d);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(9, 109, 129, 0.3);
+    color: #fff;
+    border: none;
 }
 
-.card {
-    text-align: center;
-    font-size: clamp(14px, 3.5vw, 20px);
-    font-weight: bold;
-    text-shadow: 5px 5px 5px #000;
-    transition: 2s ease;
-    color: #ffffff;
-    border: 2px solid #111;
-    box-shadow: 5px 5px 5px #000;
+#normalcsomag:hover, #procsomag:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border-color: #666;
+    transition: all 0.3s ease;
     cursor: pointer;
-    font-family: 'arial', sans-serif;
-    background-color: #1e1e1e;
-    padding: 20px;
-    min-height: 120px;
+}
+#procsomag{
+    background: linear-gradient(135deg, #045208, #1d1d1d);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(9, 93, 5, 0.3);
+    color: #fff;
+    border: none;
+}
+
+.loading-animation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    z-index: 99999;
 }
 
-.card a {
-    color: #676767;
+.loading-animation.hidden {
+    display: none !important;
 }
 
-.kartyak {
-    grid-template-columns: repeat(auto-fit, minmax(min(250px, 45vw), 1fr));
-    display: grid;
-    gap: 15px;
-    padding: 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    font-family: "Balsamiq Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-optical-sizing: auto;
-}
-
-#tapasztalat {
-    color: #fff;
-    font-family: 'white rabbit', cursive;
-    text-align: left;
-    font-size: clamp(16px, 4vw, 20px);
-    font-weight: bold;
-    text-shadow: 5px 5px 5px #000;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 2px solid #111;
-    border-radius: 10px;
-    font-variant: small-caps;
-    box-shadow: 5px 5px 5px #000;
-    max-width: min(600px, 90vw);
-    margin: 50px auto 20px auto;
-    background-color: #1e1e1e;
-    cursor: pointer;
-}
-
-.team .member {
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.89);
-    padding: 20px;
-    border-radius: 5px;
-    background: #181818;
-    transition: 0.5s;
-    height: 100%;
-    color: #fff;
-    flex-direction: column;
-    text-align: center;
-}
-
-.team .member .pic {
-    overflow: hidden;
-    width: min(180px, 40vw);
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 8px solid #f7f7f7;
+    border-top: 8px solid rgb(45, 44, 44);
     border-radius: 50%;
-    margin: 0 auto 20px auto;
+    animation: spin 1s linear infinite;
 }
 
-.team .member .pic img {
-    transition: ease-in-out 0.3s;
-    width: 100%;
-    height: auto;
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
-.team .member:hover {
-    transform: translateY(-10px);
+.skill-card {
+    background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    border: 1px solid #444;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-.team .member .member-info {
-    padding-left: 0;
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    border-color: #666;
 }
 
-.team .member h4 {
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-size: clamp(16px, 4vw, 20px);
-    color: rgb(255, 255, 255);
+.skill-card .card-img-top {
+    border-radius: 12px 12px 0 0;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #444;
 }
 
-.team .member span {
-    display: block;
-    font-size: clamp(13px, 3vw, 15px);
-    padding-bottom: 10px;
-    position: relative;
-    font-weight: 500;
-    margin: 0 auto;
-    text-align: center;
+.skill-card .card-body {
+    padding: 1.5rem;
 }
 
-.team .member span::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 1px;
-    background: #313131;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.team .member p {
-    margin: 10px 0 0 0;
-    font-size: clamp(12px, 3vw, 14px);
-    line-height: 1.5;
-}
-
-.team .member {
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.team .member a {
-    transition: ease-in-out 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    width: 32px;
-    height: 32px;
-    background: #223459;
-}
-
-.team .member a i {
-    color: rgb(176, 176, 176);
-    font-size: 16px;
-    margin: 0 2px;
-}
-
-.team .member a:hover {
-    background: rgb(212, 212, 212);
-}
-
-.team .member a:hover i {
+.skill-card .card-title {
     color: #fff;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
-.team .member a+a {
-    margin-left: 8px;
+.progress-container {
+    margin: 1rem 0;
 }
 
-#footer {
-    background: linear-gradient(to right, #1e1d1d, #000000);
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
-    font-size: clamp(12px, 3vw, 14px);
-    padding: 20px 10px !important;
-    margin-top: 30px !important;
+.progress-label {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
 }
 
-#footer a {
-    color: #c9c9cc;
+.custom-progress {
+    height: 8px;
+    background-color: #333;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.custom-progress-bar {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-github {
+    background: linear-gradient(45deg, #333, #555);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
     text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
-#footer a:hover {
-    color: #e1e3bd;
+.btn-github:hover {
+    background: linear-gradient(45deg, #555, #777);
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
 }
 
-/* Mobil specifikus média lekérdezések */
-@media (max-width: 768px) {
-    .cim h1 {
-        font-size: clamp(24px, 6vw, 40px);
-        margin-bottom: 15px;
-    }
-    
-    .container {
-        max-width: 95vw;
-    }
-    
-    #bemutatkozas {
-        width: 95vw;
-        padding: 15px;
-        margin: 20px auto;
-    }
-    
-    .kartyak {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        padding: 10px;
-        margin-top: 20px;
-    }
-    
-    .card {
-        min-height: 100px;
-        padding: 15px;
-    }
-    
-    #tapasztalat {
-        width: 95vw;
-        padding: 15px;
-        margin: 30px auto 15px auto;
-    }
-    
-    .team .member {
-        padding: 15px;
-    }
-    
-    .team .member .pic {
-        width: min(120px, 30vw);
-        margin-bottom: 15px;
-    }
-    
-    #footer {
-        padding: 15px 10px !important;
-        margin-top: 20px !important;
-    }
-}
+#footer{
+    background-color: #1b1b1b;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 
-@media (max-width: 480px) {
-    .cim h1 {
-        font-size: clamp(20px, 5vw, 32px);
-    }
-    
-    .container {
-        max-width: 98vw;
-    }
-    
-    #bemutatkozas {
-        width: 98vw;
-        padding: 12px;
-        border-radius: 8px;
-    }
-    
-    .kartyak {
-        padding: 8px;
-        gap: 8px;
-    }
-    
-    .card {
-        padding: 12px;
-        min-height: 80px;
-        border-radius: 8px;
-    }
-    
-    #tapasztalat {
-        width: 98vw;
-        padding: 12px;
-        border-radius: 8px;
-        margin: 25px auto 10px auto;
-    }
-    
-    .team .member {
-        padding: 12px;
-    }
-    
-    .team .member .pic {
-        width: min(100px, 25vw);
-        margin-bottom: 12px;
-    }
-    
-    .square {
-        height: 12px;
-        width: 12px;
-        margin: 1px;
-    }
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
 }

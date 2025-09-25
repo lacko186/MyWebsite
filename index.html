@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,67 +10,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>BogdanDev</title>
     </head>
     <body>
-    <header>
-        <div class="loading-animation">
+      <header>
 
+        <div class="loading-animation">
+            <div class="spinner"></div>
         </div>
+
+      <ul id="menu" class="nav justify-content-center p-5">
+        <li class="nav-item">
+          <a class="nav-link active" href="#cim">Otthon</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nevjegy">Névjegy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills-container">Projektek</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#csomagok">Csomagok</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Kapcsolat</a>
+        </li>
+    </ul>
+
+
         <div class="cim">
             <h1>BogdanDev</h1>
         </div>
+        
+        <div id="bemutatkozas">
+        
+        </div>
+
         <div class="container" id="container">
         
-        </div><br>
-        <div id="bemutatkozas">
         </div>
+
+    <div class="row">
+        <div class="col-sm-5 mx-auto">
+            <div id="nevjegy" class="card">
+                <div class="card-body">
+                    <div class="d-flex align-items-start">
+                        <img src="me.PNG" 
+                             style="width: 100px; height: 100px; object-fit: cover;" 
+                             class="rounded-circle me-3 flex-shrink-0" 
+                             alt="Profil kép">
+                        <div class="flex-grow-1">
+                            <h4 id="cardtext" class="card-title mb-2">Bogdán László</h4>
+                            <hr style="object-fit: contain; border: 1px solid #ccc; margin-left: 5%; margin-right: 5%;">
+                            <h6 id="cardtext" class="card-title mb-2">Szoftverfejlesztő és tesztelő technikus</h6>
+                            <p id="cardtext" class="card-text">Szeretnék segíteni akár kisebb vállalatoknak, magánszemélyeknek induló startupoknak hiszem hogy készségeimmel hozzájárulhatok a sikerükhöz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </header>
     <main>
-        <br>
-    <section id="team" class="team section-bg ">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-        <div class="col-lg-6 " data-aos="zoom-in" data-aos-delay="100">
-            <div class="member d-flex align-items-start ">
-              <div class="pic"><img src="me.PNG" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Bogdán László</h4>
-                <span>Szoftverfejlesztő és tesztelő technikus</span>
-                <p>Szeretnék segíteni akár kisebb vállalatoknak, magánszemélyeknek induló startupoknak hiszem hogy készségeimmel hozzájárulhatok a sikerükhöz.</p>
-              </div>
-            </div>
-          </div>
-          
-    <div class="kartyak">
-    <div class="card" id="elsoskill">
-        1
-    </div>
-    <div class="card" id="masodikskill">
-        2
-    </div>
-    <div class="card" id="harmadikskill">
-        3
-    </div>
-    <div class="card" id="negyedikskill">
-        4
-    </div>
-    <div class="card" id="otodikskill">
-        5
-    </div>
-    <div class="card" id="hatodikskill">
-        6
-    </div>
+    
+<div id="skills-container" class="row mt-5">
 </div>
 
 <div id="tapasztalat">
 </div>
+
+
+<div class="mt-4" id="csomagok">
+  <div class="row justify-content-center">
+    <div class="col-lg-3 col-md-4 mb-4">
+      <div id="normalcsomag" class="card text-center h-100">
+        <div class="card-body d-flex flex-column">
+          <h3 style="margin-top: 10%" class="card-title">30.000ft/Hónap</h3>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Weboldal</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Adatbázis</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Szerveroldal</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">API</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Kreatív megoldások</p>
+          <a href="mailto:laszlobogdan0619@gmail.com" class="btn btn-primary mt-auto">Érdekel</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-3 col-md-4 mb-4">
+      <div id="procsomag" class="card text-center h-100">
+        <div class="card-body d-flex flex-column">
+          <h3 class="card-title">50.000ft/Hónap</h3>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Weboldal</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Adatbázis</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Szerveroldal</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">API</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Kreatív megoldások</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Mobil alkalmazás</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Egyedi design</p>
+          <p class="card-text"><img style="width: 30px" src="check.svg" alt="check">Fenntartás</p>
+          <a href="mailto:laszlobogdan0619@gmail.com" class="btn btn-success mt-auto">Érdekel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </main>
 <footer>
 
-<div id="footer" class="p-5 mt-5 text-light text-center">
+
+<div id="footer" class="p-5 mt-5 text-center">
 &copy 2025<br>
 Készítette: Bogdán László<br>
 Kapcsolat: +36 30 620 9102<br>
@@ -78,6 +130,6 @@ Email: <a href='mailto:laszlobogdan0619@gmail.com'>laszlobogdan0619@gmail.com</a
 </div>
 
 </footer>
-    <script src="script.js"></script>
+    
   </body>
 </html>
