@@ -31,6 +31,7 @@ body{
     margin: 30px auto;
     padding: 20px;
 }
+
 #nevjegy{
     background-color: #222222;
     color: #fff;
@@ -39,6 +40,7 @@ body{
 
 #cardtext{
     margin-left: 5%;
+    color: #fff;
 }
 
 #menu{
@@ -50,6 +52,7 @@ body{
     color: #fff;
     font-size: 30px;
 }
+
 #menu a:hover{
     color: #1b9690;
     text-decoration: none;
@@ -93,6 +96,7 @@ body{
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 #procsomag{
     background: linear-gradient(135deg, #045208, #1d1d1d);
     border-radius: 15px;
@@ -165,6 +169,10 @@ body{
     margin-bottom: 1rem;
 }
 
+.skill-card .card-text {
+    color: #fff;
+}
+
 .progress-container {
     margin: 1rem 0;
 }
@@ -219,9 +227,110 @@ body{
     color: #fff;
     text-align: center;
     padding: 20px 0;
-
 }
+
 footer a{
     color: #fff;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #menu a {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    
+    #menu {
+        padding: 15px !important;
+    }
+    
+    #nevjegy {
+        margin: 20px 10px;
+    }
+    
+    #nevjegy .card-body {
+        padding: 15px;
+    }
+    
+    #nevjegy img {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    
+    #nevjegy + br {
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    .container {
+        margin-top: 40px;
+    }
+    
+    #normalcsomag, #procsomag {
+        margin: 10px;
+    }
+    
+    #normalcsomag .card-body, #procsomag .card-body {
+        padding: 15px;
+    }
+    
+    .skill-card {
+        margin: 10px;
+    }
+    
+    .skill-card .card-body {
+        padding: 15px;
+    }
+    
+    .skill-card .card-img-top {
+        height: 150px;
+    }
+    
+    #footer {
+        padding: 15px 10px !important;
+        font-size: 14px;
+    }
+    
+    .cim h1 {
+        font-size: 2rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .card-title {
+        font-size: 1.1rem !important;
+    }
+    
+    #bemutatkozas {
+        margin: 20px auto;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    #menu a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+    
+    .cim h1 {
+        font-size: 1.8rem;
+    }
+    
+    #bemutatkozas {
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+    .container {
+        margin-top: 30px;
+    }
+    
+    #footer {
+        font-size: 12px;
+    }
 }
