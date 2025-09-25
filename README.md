@@ -3,6 +3,5 @@ Bogdán László vagyok ez egy bemutatkozó oldal, szeretném megmutatni képess
 
 I'm Lászlo Bogdán, this is a presentation page, i'd like to showcase my skills and find my place in the professional world
 
-<img src="site.png" alt="website">
 
-![Demo](20250924_012513.gif)
+![Demo](ezgif-4615f575ec32da.gif)
