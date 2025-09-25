@@ -101,7 +101,7 @@ function generateSkillCards() {
         {
             'id': 1,
             'name': 'JavaScript',
-            'description': 'Modern webfejlesztés és dinamikus alkalmazások',
+            'description': 'Szerver-Kliens kapcsolat',
             'github': 'https://github.com/lacko186/carshop',
             'value': '70%',
             'progresstyle': 'background-color: #e0a720ff;',
@@ -137,7 +137,7 @@ function generateSkillCards() {
         {
             'id': 5,
             'name': 'Python',
-            'description': 'Django webalkalmazások és automatizálás',
+            'description': 'Django webalkalmazás',
             'github': 'https://github.com/lacko186/Django_alapok',
             'value': '90%',
             'progresstyle': 'background-color: #0e6585ff;',
@@ -146,7 +146,7 @@ function generateSkillCards() {
         {
             'id': 6,
             'name': 'Android',
-            'description': 'Mobil alkalmazásfejlesztés Javában',
+            'description': 'Mobil alkalmazásfejlesztés',
             'github': 'https://github.com/lacko186/Android',
             'value': '50%',
             'progresstyle': 'background-color: #5af114;',
